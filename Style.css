@@ -96,7 +96,7 @@ body{
 
 .hero__fondo::before{
     content: " ";
-    background-image: url('Logo.png');
+    background-image: url('./Logo.png');
     width: 100%;
     max-width: 1000px;
     height: 300px;
@@ -448,6 +448,7 @@ body{
     }
 
 }
+
 
 
 
