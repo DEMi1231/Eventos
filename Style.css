@@ -1,6 +1,6 @@
 @font-face {
     font-family: "CinzelDecorative-";
-    src: url(/fonts/CinzelDecorative-Regular.ttf);
+    src: url(CinzelDecorative-Regular.ttf);
 }
 
 :root{
@@ -448,6 +448,7 @@ body{
     }
 
 }
+
 
 
 
