@@ -88,7 +88,7 @@ body{
 .hero__fondo{
     width: 100%;
     height: 300px;
-    background-image: url('../IMGs/Dentro_salon.jpg');
+    background-image: url('../Dentro_salon.jpg');
     background-repeat: no-repeat;
     background-size: 100% 350px;
     position: relative;
@@ -96,7 +96,7 @@ body{
 
 .hero__fondo::before{
     content: " ";
-    background-image: url('../IMGs/Logo.png');
+    background-image: url('../Logo.png');
     width: 100%;
     max-width: 1000px;
     height: 300px;
@@ -448,3 +448,4 @@ body{
     }
 
 }
+
