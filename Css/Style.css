@@ -1,0 +1,449 @@
+@font-face {
+    font-family: "CinzelDecorative-";
+    src: url(/fonts/CinzelDecorative-Regular.ttf);
+}
+
+:root{
+    --dark-blue: hsl(233, 26%, 24%);
+    --gold: hsl(50, 100%, 50%);
+    --bright-cyan: hsl(192, 70%, 51%);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsla(0, 0%, 93%, 0.534);
+    --grayish-blue: #060047;
+    --Rosa-fuerte: #E90064;
+    --Rosa-menos: #FF7ED4;
+    --very-light-gray: hsl(0, 0%, 79%);
+    --white: hsl(0, 0%, 100%);
+    --morado-fuerte: #563A9C;
+    --morado-debil:#8B5DFF;
+
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'TrebuchetMS';
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+.nav{
+    background-color: var(--white);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.nav_img{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+.nav_icon{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.Barra_nav{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 3em 1em;
+    box-shadow: 0 0 3px rgb(0, 0, 0, .7);
+    z-index: 1000;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    gap: 2em;
+    transition: transform .3s;
+    transform: translateY(-150%);
+}
+
+.Barra_nav:target{
+    transform: translateY(0);
+}
+
+.nav_link{
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.hero__main{
+    max-width: 1200px;
+}
+
+.hero__fondo{
+    width: 100%;
+    height: 300px;
+    background-image: url('../IMGs/Dentro_salon.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    position: relative;
+}
+
+.hero__fondo::before{
+    content: " ";
+    background-image: url('../IMGs/Logo.png');
+    width: 100%;
+    max-width: 1000px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 0 auto;
+
+}
+
+.hero__texts{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.hero__title{
+    width: 90%;
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: var(--gold);
+}
+
+.hero__parrafo{
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 1em 0 1.5em;
+    color: var(--grayish-blue);
+}
+
+.cta{
+    display: inline-block;
+    padding: 1em 2em;
+    background-image: linear-gradient(to right, var(--gold), var(--white));
+    color: var(--Rosa-menos);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2em;
+}
+
+.eventosFacil{
+    background-color: var(--light-grayish-blue);
+    background-image: linear-gradient(to bottom right , var(--Rosa-fuerte), var(--grayish-blue));
+}
+
+.eventosFacil__container{
+    text-align: center;
+    padding: 70px 0;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+}
+
+.eventosFacil_parrafo{
+    line-height: 1.5;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    color: var(--white);
+}
+
+.eventosFacil_servicios{
+    display: grid;
+    gap: 3em;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.eventosFacil_icon{
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.img_icon{
+    width: 75px;
+    height: 75px;
+}
+
+.eventosFacil_title{
+    margin: 1em 0;
+    color: var(--dark-blue);
+    font-weight: 400;
+}
+
+.eventosFacil_copia{
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.articles{
+    background-image: linear-gradient(to top right , var(--Rosa-fuerte), var(--grayish-blue));
+}
+
+.articles_container{
+    padding: 70px 0;
+    text-align: center;
+}
+
+.articles_content{
+    margin-top: 2em;
+    display: grid;
+    gap: 2em;
+}
+
+.articles_article{
+    --img-bg: url('../IMGs/15_s.jpg');
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 7px ;
+    box-shadow: 0 0 3px rgb(0, 0, 0, .2);
+    overflow: hidden;
+    text-align: left;
+}
+
+.articles_article:nth-last-of-type(2){
+    --img-bg: url('../IMGs/cumpleaños.jpg');
+}
+
+.articles_article:nth-last-of-type(3){
+    --img-bg: url('../IMGs/Fiesta_inf.jpg');
+}
+
+.articles_article:nth-last-of-type(4){
+    --img-bg: url('../IMGs/boda.jpg');
+}
+
+.articles_img{
+    width: 100%;
+    height: 250px;
+    background-image: var(--img-bg);
+    background-size: cover;
+    background-position: center;
+}
+
+.articles_text{
+    padding: 1.5em 1em 2.5em;
+}
+
+.articles_autor{
+    color: var(--grayish-blue);
+    font-size: 20rem;
+}
+
+.articles_title{
+    color: var(--dark-blue);
+    font-weight: 400;
+    margin: .7rem 0;
+}
+
+.articles_parrafo{
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
+
+#footer{
+    width: 100%;
+    height: 470px;
+    background: rgb(0, 0, 0, .09);
+    color: black;
+    overflow: hidden;
+}
+
+#footer .wrap>div{
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: black;
+    font-family: 'TrebuchetMS';
+}
+
+#footer a{
+    text-decoration: none;
+    color: rgb(0, 0, 0, .569);
+    transition: all 300ms;
+}
+
+#footer h5{
+    display: block;
+    background: white;
+    height: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'CinzelDecorative';
+    font-size: 25px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer li a{
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+}
+
+#footer ul li:hover a{
+    padding-left: 40px;
+    color: black;
+    width: 100%;
+}
+
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+}
+
+#footer img{
+    margin-bottom: 15px;
+}
+
+#footer #Whatsapp img{
+    width: 100px;
+}
+
+.cta--nav{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .Barra_nav{
+        position: unset;
+        transform: unset;
+        margin: 0;
+        border-radius: 0px;
+        box-shadow: unset;
+        padding: 0;
+        width: max-content;
+        display: flex;
+        gap: 1em;
+        height: 100%;
+    }
+    .nav_link
+    {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: var(--grayish-blue);
+        position: relative;
+    }
+    .nav_link::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: var(--gold);
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+    .nav_link:hover::before{
+        opacity: 1;
+    }
+    .Barra_menu{
+        display: none;
+    }
+    .cta--nav{
+        display: inline-block;
+    }
+    .hero__main{
+        width: 95%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 450px;
+        align-items: center;
+    }
+    .hero__fondo{
+        width: 50%;
+        height: 100%;
+        margin-top: 100px;
+        background-image: url('../IMGs/Dentro_salon.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+        border-radius: 900px;
+    }
+
+    .hero__fondo::before{ /*Este es para poner la firma*/
+        left: unset;
+        right: 0;
+        height: 600px;
+        background-position: 50px 100px;
+    }
+
+    .hero__texts{
+        width: 40%;
+        padding-bottom: 0;
+        margin: 0 auto;
+        text-align: start;
+    }
+
+    .hero__title{
+        margin: 0;
+    }
+
+    .eventosFacil__container{
+        text-align: start;
+    }
+
+    .eventosFacil_parrafo{
+        width: 550px;
+    }
+
+    .eventosFacil_servicios{
+        margin: 0;
+        max-width: unset;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1.5em;
+    }
+
+    .eventosFacil_icon{
+        margin-left: unset;
+    }
+
+    .articles_container{
+        text-align: start;
+    }
+
+    .articles_content{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+    }
+}
