@@ -220,7 +220,7 @@ body{
 }
 
 .articles_article:nth-last-of-type(2){
-    --img-bg: url('../IMGs/cumpleaños.jpg');
+    --img-bg: url('..cumpleaños.jpg');
 }
 
 .articles_article:nth-last-of-type(3){
@@ -446,4 +446,5 @@ body{
         grid-template-columns: repeat(4, 1fr);
         gap: 1em;
     }
+
 }
