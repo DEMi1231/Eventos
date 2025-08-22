@@ -224,11 +224,11 @@ body{
 }
 
 .articles_article:nth-last-of-type(3){
-    --img-bg: url('../IMGs/Fiesta_inf.jpg');
+    --img-bg: url('Fiesta_inf.jpg');
 }
 
 .articles_article:nth-last-of-type(4){
-    --img-bg: url('../IMGs/boda.jpg');
+    --img-bg: url('boda.jpg');
 }
 
 .articles_img{
@@ -448,6 +448,7 @@ body{
     }
 
 }
+
 
 
 
